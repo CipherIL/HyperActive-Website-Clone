@@ -22,8 +22,14 @@
         padding: 5px;
     }
     .answer{
-        margin-bottom: 15px;
-        max-height: 800px;
+        transition: all 0.2s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+
+        &.show{
+            max-height: 800px;
+            margin-bottom: 15px;
+        }
     }
 }
 

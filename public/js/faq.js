@@ -4,7 +4,8 @@ const $arrows = [...document.querySelectorAll('#faq .aq-segments-container .aq-s
 
 $questions.forEach((question,i)=>{
     question.addEventListener('click',()=>{
+
         $arrows[i].classList.toggle('flipped');
-        
+        $answers[i].classList.toggle('show');
     })
 })
