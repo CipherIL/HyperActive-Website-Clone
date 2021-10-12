@@ -1,0 +1,37 @@
+.faq {
+  background: #fff6df;
+}
+
+.aq {
+  border: 0.5px solid #dbdbdb;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  padding: 0 10px;
+}
+.aq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #007cba;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  height: 80px;
+  font-weight: 600;
+  padding: 5px;
+}
+.aq .answer {
+  margin-bottom: 15px;
+  max-height: 800px;
+}
+
+.question-arrow {
+  width: 18px;
+  height: 18px;
+  filter: invert(32%) sepia(36%) saturate(4241%) hue-rotate(179deg) brightness(89%) contrast(101%);
+  transition: all 0ms linear;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}

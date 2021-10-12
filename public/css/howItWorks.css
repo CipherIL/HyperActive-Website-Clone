@@ -1,0 +1,59 @@
+.categories {
+  padding: 20px;
+  margin: 0 10px;
+}
+.categories .category {
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+}
+.categories .category .category__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.categories .category .category__title .plus-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+}
+.categories .category .category__content {
+  color: #fff;
+  transition: all 300ms linear;
+  max-height: 900px;
+  overflow: hidden;
+}
+.categories .category .category__content.closed {
+  max-height: 0;
+}
+
+.category__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.category__title .plus-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+}
+
+#diagnose {
+  background-color: #0598a8;
+}
+
+#routes {
+  background-color: #39a4dc;
+}
+
+#placement {
+  background-color: #06f;
+}
+
+#career {
+  background-color: #213b7f;
+}

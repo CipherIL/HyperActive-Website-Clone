@@ -1,0 +1,44 @@
+@import "_variables.scss";
+
+.why-us{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+    .why-us__title{
+        font-size: 2.9rem;
+        text-align: center;
+    }
+
+    .why-us__description{
+        padding: 50px 15px 60px 0;
+
+        .pro-text{
+            margin-right: 5px;
+            &.blue{
+                color: #0000ff !important;
+            }
+        }
+        .why-us__description__difference{
+            padding: 10px;
+            margin: 10px 0;
+            &.them{
+                background-color: black;
+                color: white;
+            }
+            &.us{
+                background-color: #eff6df;
+                color: black;
+            }
+        }
+        .why-us__description__difference>ol{
+            padding-right: 20px;
+        }
+        .why-us__description__difference>ol>li{
+            font-size: 1.1rem;
+            cursor: default;
+        } 
+    }    
+}

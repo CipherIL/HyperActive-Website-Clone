@@ -1,0 +1,65 @@
+@import '_variables.scss';
+
+.categories{
+    padding: 20px;
+    margin: 0 10px;
+    
+    .category{
+        padding: 20px;
+        margin: 10px 0;
+        width: 100%;
+
+        .category__title{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3rem;
+            color: $categoriesTextColor;
+        
+            .plus-icon{
+                width:15px;
+                height:15px;
+                margin-left: 12px;
+            }
+        }
+
+        .category__content{
+            color: $categoriesTextColor;    
+            transition: all 300ms linear;
+            max-height: 900px;
+            overflow: hidden;
+            &.closed{
+                max-height: 0;
+            }
+        }
+    }
+}
+
+.category__title{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    color: $categoriesTextColor;
+
+    .plus-icon{
+        width:15px;
+        height:15px;
+        margin-left: 12px;
+    }
+}
+
+#diagnose{
+    background-color: $diagnoseBGColor;
+}
+#routes{
+    background-color: $routesBGColor;
+}
+#placement{
+    background-color: $placementBGColor;
+}
+#career{
+    background-color: $careerBGColor;
+}

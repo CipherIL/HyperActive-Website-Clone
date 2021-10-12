@@ -1,0 +1,64 @@
+.navigation-bar {
+  width: 100%;
+  height: 150%;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+  margin: 7px 0 auto 10px;
+  position: relative;
+  align-self: flex-start;
+}
+.menu-button .menu-line {
+  height: 5px;
+  width: 40px;
+  margin: 7px 0;
+  background: #213a7f;
+  border-radius: 30px;
+  transition: all 200ms linear;
+}
+.menu-button.active > #menu-line-top {
+  transform: rotateZ(45deg) translateY(5px) translateX(11.5px);
+}
+.menu-button.active > #menu-line-middle {
+  transform: translateX(2rem);
+  opacity: 0;
+}
+.menu-button.active > #menu-line-bottom {
+  transform: rotateZ(-45deg) translateY(-5px) translateX(11.5px);
+}
+
+a {
+  text-decoration: none;
+  cursor: default;
+  display: flex;
+  margin: 0;
+}
+a .logo-container {
+  height: 60px;
+  margin-top: -7px;
+  width: min-content;
+  flex-shrink: 0;
+  align-self: flex-end;
+  position: relative;
+}
+a .logo-container .logo {
+  margin: 0 auto 5px;
+  flex-shrink: 0;
+  height: 100%;
+}
+a .logo-container .nav-subtitle {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #7e685a;
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+}

@@ -1,0 +1,19 @@
+#our-partners {
+  background: white;
+}
+
+.our-partners .our-partners__logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.our-partners .our-partners__logos .partner-logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 22px;
+  flex-shrink: 0;
+  object-fit: fill;
+}
