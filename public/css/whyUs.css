@@ -37,3 +37,28 @@
   font-size: 1.1rem;
   cursor: default;
 }
+@media (min-width: 925px) {
+  .why-us {
+    height: 70%;
+    margin: 0;
+    padding-bottom: 0;
+    box-shadow: 10px 50px 100px #000;
+  }
+}
+
+@media (min-width: 925px) {
+  .why-us__description__differences {
+    display: flex;
+  }
+  .why-us__description__differences .why-us__description__difference {
+    width: 50%;
+    max-width: 550px;
+    margin: 10px;
+    padding: 10px;
+    transition: all 500ms linear;
+  }
+  .why-us__description__differences .why-us__description__difference:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 50px;
+  }
+}

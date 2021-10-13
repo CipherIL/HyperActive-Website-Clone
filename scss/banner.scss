@@ -26,6 +26,16 @@
             font-weight: 800;
         }
     }
+    @media (min-width:925px) {
+        height: 190px;
+        .banner__text{
+            font-size: 90px;
+            line-height: .8;
+            .emphasis{
+                font-size: 120px;
+            }
+        }
+    }
 }
 .sub-banner{
     background-color: $subBannerBGColor;
