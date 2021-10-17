@@ -30,6 +30,12 @@
   background-color: #eff6df;
   color: black;
 }
+.why-us .why-us__description .why-us__description__difference .paragraph-link {
+  display: inline;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #fff;
+}
 .why-us .why-us__description .why-us__description__difference > ol {
   padding-right: 20px;
 }

@@ -31,5 +31,14 @@ const closeMobileMenu = ()=>{
 }
 
 $careersButton.addEventListener('click',()=>{
-    $careersContainer.classList.toggle('show');
+    if(window.innerWidth<925)
+        $careersContainer.classList.toggle('show');
+})
+$careersButton.addEventListener('mouseover',()=>{
+    if(window.innerWidth>=925)
+        $careersContainer.classList.add('show');
+})
+$careersButton.addEventListener('mouseleave',()=>{
+    if(window.innerWidth>=925)
+        $careersContainer.classList.remove('show');
 })

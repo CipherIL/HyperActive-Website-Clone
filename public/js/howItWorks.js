@@ -68,3 +68,26 @@ $careerCategory.addEventListener('click',()=>{
     }
 })
 
+const adjustContentByWidth = ()=>{
+    if(window.innerWidth>1205){
+        $diagnoseContent.style.display = "block";
+        $diagnoseContent.classList.remove("closed");
+        $careerContent.style.display = "block";
+        $careerContent.classList.remove("closed");
+        $placementContent.style.display = "block";
+        $placementContent.classList.remove("closed");
+        $routesContent.style.display = "block";
+        $routesContent.classList.remove("closed");
+    }
+    else{
+        $diagnoseContent.style.display = "none";
+        $careerContent.style.display = "none";
+        $placementContent.style.display = "none";
+        $routesContent.style.display = "none"; 
+    }
+}
+window.addEventListener('resize',()=>{
+    adjustContentByWidth();
+})
+
+adjustContentByWidth();

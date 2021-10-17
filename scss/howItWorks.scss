@@ -8,6 +8,7 @@
         padding: 20px;
         margin: 10px 0;
         width: 100%;
+        position: relative;
 
         .category__title{
 
@@ -32,6 +33,9 @@
             &.closed{
                 max-height: 0;
             }
+        }
+        .arrow{
+            display:none;
         }
     }
 }
@@ -62,4 +66,69 @@
 }
 #career{
     background-color: $careerBGColor;
+}
+
+@media (min-width:1205px) {
+    .categories{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 1100px;
+        margin: 0 auto;
+        position: relative;
+        .category{
+            margin: 0;
+            padding: 45px;
+            .category__title{
+                .plus-icon{
+                    display:none;
+                }
+            }
+            .arrow{
+                display: block;
+                position: absolute;
+            }
+        }
+    }
+    #placement{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #career{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+#diagnose-arrow{
+    width: 0; 
+    height: 0;
+    top:40px;
+    right:0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+    
+    border-right:25px solid $diagnoseBGColor;
+}
+
+#routes-arrow{
+    width: 0; 
+    height: 0;
+    top:0px;
+    left:40px; 
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent; 
+    
+    border-top:25px solid $routesBGColor;
+}
+
+#placement-arrow{
+    width: 0; 
+    height: 0;
+    top:40px;
+    left:0px; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+    
+    border-left:25px solid $placementBGColor;
 }

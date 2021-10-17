@@ -56,27 +56,8 @@
   margin: 10px 0 20px 0;
   color: #000;
 }
-.navigation-container .links-container .careers-container {
-  margin: 10px 0 20px 0;
-}
-.navigation-container .links-container .careers-container span {
-  font-size: 1.25rem;
-  color: #000;
-}
-.navigation-container .links-container .careers-container span i {
-  font-style: normal;
-  font-size: 15px;
-}
-.navigation-container .links-container .careers-container .career-links {
-  display: none;
-}
-.navigation-container .links-container .careers-container .career-links.show {
-  display: block;
-}
-.navigation-container .links-container .careers-container .career-link {
-  font-size: 1.25rem;
-  margin: 10px 10px 20px 0;
-  color: #000;
+.navigation-container .links-container .nav-link:hover {
+  cursor: pointer;
 }
 @media (min-width: 925px) {
   .navigation-container .links-container {

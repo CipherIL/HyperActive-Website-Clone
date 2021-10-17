@@ -54,29 +54,11 @@
             margin: 10px 0 20px 0;
             color: #000;
         }
-        
-        .careers-container{
-            margin: 10px 0 20px 0;
-            span{
-                font-size: 1.25rem;
-                color: #000;
-                i{
-                    font-style: normal;
-                    font-size: 15px;
-                }
-            }
-            .career-links{
-                display: none;
-                &.show{
-                    display: block;
-                }
-            }
-            .career-link{
-                font-size: 1.25rem;
-                margin: 10px 10px 20px 0;
-                color: #000;
-            }
+        .nav-link:hover{
+            cursor: pointer;
         }
+        
+        
         @media (min-width:925px){
             display: flex;
             position: static;
@@ -100,7 +82,6 @@
                 justify-content: center;
                 span{
                     font-size: 16px;
-                    
                 } 
                 .career-link{
                     margin: 0;
